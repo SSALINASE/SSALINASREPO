@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Agencia de Viajes</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Agencia de Viajes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Vuelos</a></li>
+                    <li><a href="#">Hoteles</a></li>
+                    <li><a href="OfertasSemana4.html">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="Formulario">
+            <h2>Ofertas de Paquetes2</h2>
+            <div id="Formulario">
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="ContSeleccion">
+                <label for="SeleccionDestino">🌍 <b>Destino</b></label>
+                <select id="SeleccionDestino" onchange="ActualizarInfoPaquete()">
+                    <option value="">Selecciona un destino</option>
+                </select>
+                <div id="InfoPaquete">
+                </div>
+            </div>
+            <div id="ContResultados">
+            </div>
+                    
+        </div>
+        <div class="Contenedor-Ofertas">
+            <h2>Ofertas de Paquetes</h2>
+            <div id="ofertas">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p> Agencia de Viajes para Viajar Mucho Mucho pero Mucho</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <div id="ContNotifi">
+</div>
+        
+
+</body>
+
+</html>

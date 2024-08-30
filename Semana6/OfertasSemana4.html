@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ofertas</title>
+    <style>
+        .notificacion {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px;
+            background-color: #f0ad4e;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="notificacion" class="notificacion"></div>
+
+    <?php
+$ofertaEspecial = "¡Descuento del 20% en todos los vuelos hasta el final del mes!";
+
+echo "<script type='text/javascript'>
+        var ofertaEspecial = " . json_encode($ofertaEspecial) . ";
+        if (ofertaEspecial) {
+            window.onload = function() {
+                mostrarNotificacion(ofertaEspecial);
+            };
+        }
+      </script>";
+?>
+
+
+    <script>
+        function mostrarNotificacion(mensaje) {
+            var notificacion = document.getElementById('notificacion');
+            notificacion.textContent = mensaje;
+            notificacion.style.display = 'block';
+            setTimeout(function() {
+                notificacion.style.display = 'none';
+            }, 5000); // Ocultar después de 5 segundos
+        }
+    </script>
+</body>
+</html>

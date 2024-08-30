@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0033cc;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+#cartIcon {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#cartCount {
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+header .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Formulario {
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+}
+
+.GrupoCampos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.GrupoCampos label {
+    width: 150px; /* Establece un ancho fijo para todas las etiquetas */
+    margin-right: 10px;
+    text-align: right;
+}
+
+.GrupoCampos input {
+    flex: 1;
+    padding: 5px;
+}
+
+.BotonFormulario {
+    justify-content: center; /* Centra el botón horizontalmente */
+}
+
+.BotonFormulario input[type="submit"] {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+.main2 {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.main {
+    flex: 3;
+    padding-right: 20px;
+}
+.main2 {
+    flex: 3;
+    padding-right: 20px;
+    align-items: center;
+
+}
+
+.Contenedor-Ofertas {
+    flex: 1;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    text-align: center;
+}
+
+#ContNotifi {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; 
+    z-index: 1000; 
+}
+.notificacion {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.Contenedor-Ofertas h2 {
+    text-align: center;
+}
+
+.ContSeleccion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#InfoPaquete {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#ContResultados, #ContNotifi {
+    margin-top: 20px;
+    text-align: center;
+}
+#ContNotifi {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#ContNotifi {
+    color: red;
+}
+
+
+footer {
+    background-color: #0033cc;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
